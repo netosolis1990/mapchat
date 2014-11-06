@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>MapChat</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/chat.css">
+
+	<style>
+		html { height: 100% }
+		body { height: 100%; margin: 0px; padding: 0px }
+		#container { width: 100%; height: 100% }
+		#map { width: 100%; height: 100% }
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/pusher.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="map"></div>
+	</div>
+	<div class="send-wrap navbar navbar-default navbar-fixed-bottom boton">
+		<textarea id="mymsg" class="form-control send-message" rows="2" placeholder="Tu mensaje...."></textarea>
+		<div class="btn-panel">
+			<a href="javascript:enviarMensaje();" class=" col-lg-4 text-right btn   send-message-btn pull-right" role="button"><i class="fa fa-plus"></i> Enviar Mensaje</a>
+		</div>
+	</div>
+</body>
+</html>
